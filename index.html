@@ -52,6 +52,18 @@
             font-size: 2em;
         }
 
+        .topcoat-list__item {
+            padding: .5rem;
+        }
+
+        /*.topcoat-icon--arrow {
+          background: url("../img/hamburger_light.svg") no-repeat;
+          background-size: cover;
+        }*/
+
+
+
+
         .lista-finished {
             text-decoration: line-through;
             color: #777;
@@ -80,7 +92,7 @@
     <div id="wrapper">
         
       <div id="sideNav">
-        <div class="nav-top">My Lists</div>
+        <div class="nav-top">لستاتي</div>
         <nav class="site">
           <ul>
             <li><a href="http://topcoat.io">Home</a></li>
@@ -115,7 +127,9 @@
                   </button>
             </div>
           
+          <!-- ===== Pending Items ===== -->
           <div class="topcoat-list">
+            <h3 class="topcoat-list__header">باقية</h3>
             <ul class="topcoat-list__container">
               <li class="topcoat-list__item">
                 <label class="topcoat-checkbox">
@@ -141,14 +155,14 @@
               <ul class="topcoat-list__container">
               <li class="topcoat-list__item">
                 <label class="topcoat-checkbox lista-finished">
-                  <input type="checkbox" disabled>
+                  <input type="checkbox" checked>
                   <div class="topcoat-checkbox__checkmark"></div>
                   <span class="lista-item-text">زبادي</span>
                 </label>
               </li>
               <li class="topcoat-list__item">
                 <label class="topcoat-checkbox lista-finished">
-                  <input type="checkbox" disabled>
+                  <input type="checkbox" checked>
                   <div class="topcoat-checkbox__checkmark"></div>
                   <span class="lista-item-text">عصير</span>
                 </label>
