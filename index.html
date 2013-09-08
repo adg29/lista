@@ -1,32 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link href="topcoat/css/topcoat-mobile-dark.min.css" rel="stylesheet">
-    <link href="css/pageslider.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
-</head>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
 
-<body>
+    http://www.apache.org/licenses/LICENSE-2.0
 
-<script src="lib/jquery-1.9.1.min.js"></script>
-<script src="lib/underscore-min.js"></script>
-<script src="lib/backbone-min.js"></script>
-<script src="lib/pageslider.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>Lista</title>
 
-<script src="js/app.js"></script>
-<script src="js/utils/templates.js"></script>
-<script src="js/models/EmployeeModel.js"></script>
-<script src="js/adapters/memory-adapter.js"></script>
-<script src="js/routers/AppRouter.js"></script>
-<script src="js/views/HomeView.js"></script>
-<script src="js/views/EmployeeListView.js"></script>
-<script src="js/views/EmployeeView.js"></script>
-<script src="js/views/ReportsView.js"></script>
-<script src="js/views/MapView.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+        <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-dark-AR.css">
+        <link rel="stylesheet" type="text/css" href="css/main-AR.css">
+        <link rel="stylesheet" type="text/css" href="css/brackets.css">
+    
+        <!--[if lt IE 9]>
+          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-</body>
+        <style>
+        .nav-top {
+          height: 4em;
+          text-align: center;
+          width: 250px;
+          vertical-align: middle;
+          line-height: 4em;
+        }
+        </style>
+
+
+  </head>
+  <body class="dark">
+    <div id="wrapper">
+        
+      <div id="sideNav">
+        <div class="nav-top">My Lists</div>
+        <nav class="site">
+          <ul>
+            <li><a href="http://topcoat.io">Home</a></li>
+            <li><a href="http://topcoat.io">Home</a></li>
+            <li><a href="http://topcoat.io">Home</a></li>
+            <li><a href="http://topcoat.io">Home</a></li>
+            <li><a href="http://topcoat.io">Home</a></li>
+            <li><a href="http://topcoat.io">Home</a></li>
+            <li><a href="http://topcoat.io">Home</a></li>
+          </ul>
+        </nav>
+      </div> <!-- #sideNav -->
+
+
+      <div id="site">
+
+        <header id="main-header">
+          <hgroup>
+            <h1><a href="http://topcoat.io">Topcoat</a></h1>
+            <p>CSS for clean and fast web apps</p>
+          </hgroup>
+          <a id="slide-menu-button" class="topcoat-icon-button--large--quiet">
+            <span class="topcoat-icon--large topcoat-icon--menu-stack"></span> <!-- topcoat-icon--menu-stack -->
+          </a>
+        </header>
+
+        <div id="content">
+          <input type="text" class="topcoat-text-input" placeholder="اكتب هنا"/>
+          
+          <div class="topcoat-list">
+            <ul class="topcoat-list__container">
+              <li class="topcoat-list__item">Item</li>
+              <li class="topcoat-list__item">Item</li>
+              <li class="topcoat-list__item">Item</li>
+            </ul>
+          </div>
+
+          <p>hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. </p>
+        </div>
+
+      </div> <!-- #site -->
+
+    </div> <!-- #wrapper -->
+
+    <script src="js/rainbow-custom.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
