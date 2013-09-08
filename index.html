@@ -43,6 +43,35 @@
           vertical-align: middle;
           line-height: 4em;
         }
+
+        #main-header {
+            height: 5em;
+        }
+
+        #main-header hgroup h1 {
+            font-size: 2em;
+        }
+
+        .lista-finished {
+            text-decoration: line-through;
+            color: #777;
+        }
+
+        .lista-add {
+            margin-bottom: 2em;
+        }
+
+        .lista-add-field {
+            width: 80%;
+        }
+
+        .lista-add-button {
+            float: left;
+        }
+
+        .lista-item-text {
+            margin-right: 1em;
+        }
         </style>
 
 
@@ -70,8 +99,8 @@
 
         <header id="main-header">
           <hgroup>
-            <h1><a href="http://topcoat.io">Topcoat</a></h1>
-            <p>CSS for clean and fast web apps</p>
+            <h1><a href="http://topcoat.io">مقاضي</a></h1>
+            <!-- <p>CSS for clean and fast web apps</p> -->
           </hgroup>
           <a id="slide-menu-button" class="topcoat-icon-button--large--quiet">
             <span class="topcoat-icon--large topcoat-icon--menu-stack"></span> <!-- topcoat-icon--menu-stack -->
@@ -79,17 +108,56 @@
         </header>
 
         <div id="content">
-          <input type="text" class="topcoat-text-input" placeholder="اكتب هنا"/>
+            <div class="lista-add">
+                  <input type="text" class="topcoat-text-input lista-add-field" placeholder="اكتب هنا"/>
+                  <button class="topcoat-icon-button lista-add-button">
+                    <span class="topcoat-icon" style="background-color:#A5A7A7;"></span>
+                  </button>
+            </div>
           
           <div class="topcoat-list">
             <ul class="topcoat-list__container">
-              <li class="topcoat-list__item">Item</li>
-              <li class="topcoat-list__item">Item</li>
-              <li class="topcoat-list__item">Item</li>
+              <li class="topcoat-list__item">
+                <label class="topcoat-checkbox">
+                  <input type="checkbox">
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  <span class="lista-item-text">خبز</span>
+              </label>
+              </li>
+              <li class="topcoat-list__item">
+                <label class="topcoat-checkbox">
+                  <input type="checkbox">
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  <span class="lista-item-text">حليب</span>
+              </label>
+              </li>
+
             </ul>
           </div>
 
-          <p>hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. </p>
+          <!-- ===== Completed Items ===== -->
+            <div class="topcoat-list">
+              <h3 class="topcoat-list__header">منتهية</h3>
+              <ul class="topcoat-list__container">
+              <li class="topcoat-list__item">
+                <label class="topcoat-checkbox lista-finished">
+                  <input type="checkbox" disabled>
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  <span class="lista-item-text">زبادي</span>
+                </label>
+              </li>
+              <li class="topcoat-list__item">
+                <label class="topcoat-checkbox lista-finished">
+                  <input type="checkbox" disabled>
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  <span class="lista-item-text">عصير</span>
+                </label>
+              </li>
+
+            </ul>
+            </div>
+
+          <!-- <p>hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. hello this is a long paragraph of text.  As if you were reading a long book to see how it looks on the screen and in order to see what happens to the pull-out nav items when this is long. </p> -->
         </div>
 
       </div> <!-- #site -->
